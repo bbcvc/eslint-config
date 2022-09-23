@@ -1,0 +1,6 @@
+{
+  "extends": "@bbcvc",
+  "plugins": [
+    "bbcvc"
+  ]
+}

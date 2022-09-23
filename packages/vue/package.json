@@ -1,0 +1,24 @@
+{
+  "name": "@bbcvc/eslint-config-vue",
+  "version": "0.27.0",
+  "description": "",
+  "author": "chenglong <chenglongxing233@gmail.com> (https://github.com/bbcvc/)",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@bbcvc/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  }
+}
