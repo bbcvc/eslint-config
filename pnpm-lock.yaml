@@ -4,21 +4,21 @@ importers:
 
   .:
     specifiers:
-      '@antfu/eslint-config': '*'
+      '@bbcvc/eslint-config': '*'
       bumpp: ^8.2.1
       eslint: ^8.23.0
-      eslint-plugin-antfu: workspace:*
+      eslint-plugin-bbcvc: workspace:*
       typescript: ^4.8.2
     devDependencies:
-      '@antfu/eslint-config': link:packages/all
+      '@bbcvc/eslint-config': link:packages/all
       bumpp: 8.2.1
       eslint: 8.23.0
-      eslint-plugin-antfu: link:packages/eslint-plugin-antfu
+      eslint-plugin-bbcvc: link:packages/eslint-plugin-bbcvc
       typescript: 4.8.2
 
   packages/all:
     specifiers:
-      '@antfu/eslint-config-vue': workspace:*
+      '@bbcvc/eslint-config-vue': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
       eslint: ^8.23.0
@@ -34,7 +34,7 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
-      '@antfu/eslint-config-vue': link:../vue
+      '@bbcvc/eslint-config-vue': link:../vue
       '@typescript-eslint/eslint-plugin': 5.36.1_wyxuyzvlfep3lsyoibc4fosfq4
       '@typescript-eslint/parser': 5.36.1_eslint@8.23.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.23.0
@@ -54,7 +54,7 @@ importers:
   packages/basic:
     specifiers:
       eslint: ^8.23.0
-      eslint-plugin-antfu: workspace:*
+      eslint-plugin-bbcvc: workspace:*
       eslint-plugin-eslint-comments: ^3.2.0
       eslint-plugin-html: ^7.1.0
       eslint-plugin-import: ^2.26.0
@@ -67,7 +67,7 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
-      eslint-plugin-antfu: link:../eslint-plugin-antfu
+      eslint-plugin-bbcvc: link:../eslint-plugin-bbcvc
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.23.0
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.26.0_eslint@8.23.0
@@ -82,7 +82,7 @@ importers:
     devDependencies:
       eslint: 8.23.0
 
-  packages/eslint-plugin-antfu:
+  packages/eslint-plugin-bbcvc:
     specifiers:
       '@typescript-eslint/utils': ^5.36.1
       unbuild: ^0.8.10
@@ -95,14 +95,14 @@ importers:
 
   packages/react:
     specifiers:
-      '@antfu/eslint-config-ts': workspace:*
+      '@bbcvc/eslint-config-ts': workspace:*
       eslint: ^8.23.0
       eslint-plugin-react: ^7.31.1
       eslint-plugin-react-hooks: ^4.6.0
       react: ^18.2.0
       typescript: ^4.8.2
     dependencies:
-      '@antfu/eslint-config-ts': link:../typescript
+      '@bbcvc/eslint-config-ts': link:../typescript
       eslint-plugin-react: 7.31.1_eslint@8.23.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.23.0
     devDependencies:
@@ -112,12 +112,12 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@antfu/eslint-config-basic': workspace:*
+      '@bbcvc/eslint-config-basic': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
       eslint: ^8.23.0
     dependencies:
-      '@antfu/eslint-config-basic': link:../basic
+      '@bbcvc/eslint-config-basic': link:../basic
       '@typescript-eslint/eslint-plugin': 5.36.1_wyxuyzvlfep3lsyoibc4fosfq4
       '@typescript-eslint/parser': 5.36.1_eslint@8.23.0
     devDependencies:
@@ -125,11 +125,11 @@ importers:
 
   packages/vue:
     specifiers:
-      '@antfu/eslint-config-ts': workspace:*
+      '@bbcvc/eslint-config-ts': workspace:*
       eslint: ^8.23.0
       eslint-plugin-vue: ^9.4.0
     dependencies:
-      '@antfu/eslint-config-ts': link:../typescript
+      '@bbcvc/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 9.4.0_eslint@8.23.0
     devDependencies:
       eslint: 8.23.0
@@ -990,7 +990,7 @@ packages:
       color-name: 1.1.4
 
   /color-name/1.1.3:
-    resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
+    resolution: {integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=}
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
@@ -3214,14 +3214,6 @@ packages:
       - supports-color
     dev: true
 
-  /rollup/2.78.1:
-    resolution: {integrity: sha512-VeeCgtGi4P+o9hIg+xz4qQpRl6R401LWEXBmxYKOV4zlF82lyhgh2hTZnheFUbANE8l2A41F458iwj2vEYaXJg==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /rollup/2.79.0:
     resolution: {integrity: sha512-x4KsrCgwQ7ZJPcFA/SUu6QVcYlO7uRLfLAy0DSA4NS2eG8japdbpM50ToH7z4iObodRYOJ0soneF0iaQRJ6zhA==}
     engines: {node: '>=10.0.0'}
@@ -3616,7 +3608,7 @@ packages:
       esbuild: 0.14.53
       postcss: 8.4.14
       resolve: 1.22.1
-      rollup: 2.78.1
+      rollup: 2.79.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
