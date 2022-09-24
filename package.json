@@ -1,6 +1,6 @@
 {
-  "name": "@bbcvc/eslint-config-monorepo",
-  "version": "0.0.3-beta.3",
+  "name": "@bbcvc/eslint-config",
+  "version": "0.0.3-beta.4",
   "packageManager": "pnpm@7.1.0",
   "author": "chenglong <chenglongxing233@gmail.com> (https://github.com/bbcvc/)",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public --no-git-checks"
   },
   "devDependencies": {
-    "@bbcvc/eslint-config": "*",
+    "@bbcvc/eslint-config-all": "*",
     "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "eslint-plugin-bbcvc": "workspace:*",
