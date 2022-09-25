@@ -1,6 +1,7 @@
 # @bbcvc/eslint-config
 
 [![npm](https://img.shields.io/npm/v/@bbcvc/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@bbcvc/eslint-config)
+[![npm](https://img.shields.io/npm/dm/@bbcvc/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@bbcvc/eslint-config)
 
 - Single quotes, no semi
 - Auto fix for formatting (aimed to be used standalone without Prettier)
