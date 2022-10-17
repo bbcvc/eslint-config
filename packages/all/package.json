@@ -1,6 +1,6 @@
 {
   "name": "@bbcvc/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "chenglong's ESLint config",
   "author": "chenglong <chenglongxing233@gmail.com> (https://github.com/bbcvc/)",
   "license": "MIT",
