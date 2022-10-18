@@ -1,14 +1,12 @@
 module.exports = {
+  plugins: [
+    'react',
+  ],
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     '@bbcvc/eslint-config-ts',
   ],
-  settings: {
-    react: {
-      version: '17.0',
-    },
-  },
   rules: {
     'jsx-quotes': [
       'error',
