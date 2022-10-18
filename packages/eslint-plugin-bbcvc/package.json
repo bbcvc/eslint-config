@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-bbcvc",
-  "version": "0.2.4",
+  "version": "0.2.5-beta.0",
   "license": "MIT",
   "homepage": "https://github.com/bbcvc/eslint-config",
   "main": "./dist/index.cjs",
